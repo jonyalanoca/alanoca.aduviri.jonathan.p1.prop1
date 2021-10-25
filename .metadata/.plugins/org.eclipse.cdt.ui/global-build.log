@@ -1,0 +1,88 @@
+09:31:10 **** Incremental Build of configuration Debug for project alanoca.jonathan.p1.propl.1A ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\alanoca.jonathan.p1.propl.1A.o" "..\\src\\alanoca.jonathan.p1.propl.1A.c" 
+..\src\alanoca.jonathan.p1.propl.1A.c: In function 'main':
+..\src\alanoca.jonathan.p1.propl.1A.c:17:29: warning: excess elements in struct initializer
+    {2000, "amd","IBM",50000,0},
+                             ^
+..\src\alanoca.jonathan.p1.propl.1A.c:17:29: note: (near initialization for 'notebooks[0]')
+..\src\alanoca.jonathan.p1.propl.1A.c:18:35: warning: excess elements in struct initializer
+    {2001, "intel","Samsung",70000,0},
+                                   ^
+..\src\alanoca.jonathan.p1.propl.1A.c:18:35: note: (near initialization for 'notebooks[1]')
+..\src\alanoca.jonathan.p1.propl.1A.c:19:32: warning: excess elements in struct initializer
+    {2002, "amd","lenovo",40000,0},
+                                ^
+..\src\alanoca.jonathan.p1.propl.1A.c:19:32: note: (near initialization for 'notebooks[2]')
+..\src\alanoca.jonathan.p1.propl.1A.c:20:31: warning: excess elements in struct initializer
+    {2003, "intel","IBM",55000,0}
+                               ^
+..\src\alanoca.jonathan.p1.propl.1A.c:20:31: note: (near initialization for 'notebooks[3]')
+..\src\alanoca.jonathan.p1.propl.1A.c:30:10: error: incompatible type for argument 1 of 'ordenar'
+  ordenar(notebooks,TAM);
+          ^~~~~~~~~
+..\src\alanoca.jonathan.p1.propl.1A.c:13:5: note: expected 'eNotebook {aka struct <anonymous>}' but argument is of type 'eNotebook * {aka struct <anonymous> *}'
+ int ordenar(eNotebook notebooks,int tam);
+     ^~~~~~~
+..\src\alanoca.jonathan.p1.propl.1A.c:32:33: error: '(eNotebook *)&notebooks' is a pointer; did you mean to use '->'?
+   printf("%d %s %s %f",notebooks.id, notebooks.marca,notebooks.procesador, notebooks.precio);
+                                 ^
+                                 ->
+..\src\alanoca.jonathan.p1.propl.1A.c:32:47: error: '(eNotebook *)&notebooks' is a pointer; did you mean to use '->'?
+   printf("%d %s %s %f",notebooks.id, notebooks.marca,notebooks.procesador, notebooks.precio);
+                                               ^
+                                               ->
+..\src\alanoca.jonathan.p1.propl.1A.c:32:63: error: '(eNotebook *)&notebooks' is a pointer; did you mean to use '->'?
+   printf("%d %s %s %f",notebooks.id, notebooks.marca,notebooks.procesador, notebooks.precio);
+                                                               ^
+                                                               ->
+..\src\alanoca.jonathan.p1.propl.1A.c:32:85: error: '(eNotebook *)&notebooks' is a pointer; did you mean to use '->'?
+   printf("%d %s %s %f",notebooks.id, notebooks.marca,notebooks.procesador, notebooks.precio);
+                                                                                     ^
+                                                                                     ->
+..\src\alanoca.jonathan.p1.propl.1A.c: In function 'ordenar':
+..\src\alanoca.jonathan.p1.propl.1A.c:42:8: warning: implicit declaration of function 'strcmp' [-Wimplicit-function-declaration]
+     if(strcmp(notebooks[i].marca,notebooks[j].marca)>0){
+        ^~~~~~
+..\src\alanoca.jonathan.p1.propl.1A.c:42:24: error: subscripted value is neither array nor pointer nor vector
+     if(strcmp(notebooks[i].marca,notebooks[j].marca)>0){
+                        ^
+..\src\alanoca.jonathan.p1.propl.1A.c:42:43: error: subscripted value is neither array nor pointer nor vector
+     if(strcmp(notebooks[i].marca,notebooks[j].marca)>0){
+                                           ^
+..\src\alanoca.jonathan.p1.propl.1A.c:43:19: error: subscripted value is neither array nor pointer nor vector
+      aux=notebooks[i];
+                   ^
+..\src\alanoca.jonathan.p1.propl.1A.c:44:15: error: subscripted value is neither array nor pointer nor vector
+      notebooks[i]=notebooks[j];
+               ^
+..\src\alanoca.jonathan.p1.propl.1A.c:44:28: error: subscripted value is neither array nor pointer nor vector
+      notebooks[i]=notebooks[j];
+                            ^
+..\src\alanoca.jonathan.p1.propl.1A.c:45:15: error: subscripted value is neither array nor pointer nor vector
+      notebooks[j]=aux;
+               ^
+..\src\alanoca.jonathan.p1.propl.1A.c:47:29: error: subscripted value is neither array nor pointer nor vector
+     else if(strcmp(notebooks[i].marca,notebooks[j].marca)==0){
+                             ^
+..\src\alanoca.jonathan.p1.propl.1A.c:47:48: error: subscripted value is neither array nor pointer nor vector
+     else if(strcmp(notebooks[i].marca,notebooks[j].marca)==0){
+                                                ^
+..\src\alanoca.jonathan.p1.propl.1A.c:48:19: error: subscripted value is neither array nor pointer nor vector
+      if (notebooks[i].precio> notebooks[j].precio){
+                   ^
+..\src\alanoca.jonathan.p1.propl.1A.c:48:40: error: subscripted value is neither array nor pointer nor vector
+      if (notebooks[i].precio> notebooks[j].precio){
+                                        ^
+..\src\alanoca.jonathan.p1.propl.1A.c:49:20: error: subscripted value is neither array nor pointer nor vector
+       aux=notebooks[i];
+                    ^
+..\src\alanoca.jonathan.p1.propl.1A.c:50:16: error: subscripted value is neither array nor pointer nor vector
+       notebooks[i]=notebooks[j];
+                ^
+..\src\alanoca.jonathan.p1.propl.1A.c:50:29: error: subscripted value is neither array nor pointer nor vector
+       notebooks[i]=notebooks[j];
+                             ^
+..\src\alanoca.jonathan.p1.propl.1A.c:51:16: error: subscripted value is neither array nor pointer nor vector
+       notebooks[j]=aux;
+                ^

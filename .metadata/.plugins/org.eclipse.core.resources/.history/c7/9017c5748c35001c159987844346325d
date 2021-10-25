@@ -1,0 +1,17 @@
+
+#include <stdio.h>
+#include <stdlib.h>
+float aplicarDescuento(int precio);
+int main(void) {
+	setbuf(stdout,NULL);
+	int precio=2000;
+	printf("%f",aplicarDescuento(precio));
+	return EXIT_SUCCESS;
+}
+
+float aplicarDescuento(int precio){
+	float precioFinal;
+	int descuento;
+	precioFinal=precio-((float)descuento*precio/100);
+	return precioFinal;
+}
